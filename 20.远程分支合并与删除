@@ -1,0 +1,13 @@
+目的：将远程子分支合并到主分支，并删除子分支
+
+切换到主分支里
+git checkout master
+git pull 从远程克隆资料过来，包括主分支和子分支
+git checkout ask    切到子分支
+git rebase master    将子分支移到master最新点
+git checkout master   切到master
+git merge ask           执行合并
+git push              推到远程
+git branch --merged      查看已经合并的分支
+
+
