@@ -1,0 +1,8 @@
+首先将项目代码从远程克隆到电脑中的zx文件夹里
+git clone git@github.com:zhangxue77/git_notes.git zx
+查看分支：git branch注意此时只克隆了master主分支，而子分支没有克隆
+使用命令将ask子分支也拿过来检入到ask里面
+git pull origin ask:ask
+查看分支
+git branch -a
+

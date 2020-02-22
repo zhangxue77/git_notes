@@ -1,0 +1,9 @@
+当前远程服务器只有一个分支master
+git checkout -b ask  %在master分支下创建一个子分支
+git branch -a      查看本地分支以及远程分支
+touch a.php   在分支ask下新建文件
+git add .
+git commit -m '11'
+git push    %
+此时会出错，当前分支没有与远程分支关联，使用命令
+git push --set-upstream origin ask
