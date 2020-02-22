@@ -1,0 +1,6 @@
+mkdir cheshi
+touch master.php
+git add .
+git commit -m 'master.php'
+git tag v1.0        %v1.0版本
+注意，标签不是随便打的，必须是在你工作稳定下打的

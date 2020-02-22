@@ -1,0 +1,4 @@
+git config --global alias.a add  %表示用a表示add命令
+git config --global alias.c commit  %表示用c表示commit命令
+
+vim .gitconfig %进一步操作更多

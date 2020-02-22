@@ -1,0 +1,30 @@
+--过程分析
+    在文件夹shop里，自己编写了很多代码，a.php  b.php 将这些文件先放入车间通过命令add
+    待所有代码都写完确定没有错误，
+    再通过commit 命令将车间里所有文件运输到git仓库里
+--操作过程分析
+    --将a.php  b.php加入车间
+        git add a.php
+        git add b.php
+    --将车间内存储的全部入库
+        git commit -m '第一次入库'
+    --编辑或者修改文件内容
+        vim a.php
+    --修改后再放车间，再入库
+        git add a.php
+        git commit -m '第二次入库'
+    --当想将所有文件放车间时，采用
+        git add .
+--当采用git add .时容易将我们不想放车间的文件放进去，解决办法，创建一个忽略文件
+    code .gitignore
+    再在gitignore文件里写上不想放进车间的文件，比如目前有文件：a.txt b.txt 文件夹：ventor
+    *.txt  %表示后缀为txt的文件不被监视，可忽略，不用放进车间
+    ！a.txt %除了a.txt文件外其余都监视，不可忽略
+    /ventor %文件夹被忽略，不用监视
+    /ventor/index.php %文件夹ventor下的index.php被忽略，不被监视
+--查看状态index.php
+    git status
+--删除本地文件
+    git rm a.txt
+--错将文件放到版本库了，希望删除库里的文件，但不能删除本地的
+    git rm --cached a.txt

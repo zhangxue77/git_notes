@@ -1,0 +1,14 @@
+mkdir ceshi   %新建一个文件夹
+cd ceshi   %打开文件夹
+git init   %创建一个库
+touch a.php   %在文件夹里新建一个文件
+git add a.php   %将文件放进车间（暂存区）
+git rm --cached a.php  %后悔放入车间，撤回放入车间的文件
+git add a.php    %再次将a.php放进车间
+git commit -m '11'  %将文件入库
+vim a.php   %编辑a.php
+git add a.php  %将重新编辑的a.php放进车间
+git reset HAED a.php  %第二次放入后，后悔，使用reset撤回
+cat a.php  %可以显示a.php内容
+git checkout -- a.php  %恢复到上次入库的文件
+

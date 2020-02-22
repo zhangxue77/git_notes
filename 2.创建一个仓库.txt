@@ -1,0 +1,10 @@
+--先新建一个文件夹
+   mkdir shop
+--进入文件夹里，创建一个仓库
+   cd shop
+   git init
+--为这个仓库配置用户 
+   git config user.name "zhangxue77"
+   git config user.email "zx_beryl@163.com"  
+--克隆
+   git clone https://github.com/zhangxue77/leetcode.git

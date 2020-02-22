@@ -1,0 +1,31 @@
+mkdir cheshi        %新建文件夹
+cd cheshi           %打开文件夹
+git init            %创建库
+touch xj.php        %新建文件
+vim xj.php          %编辑文件内容
+在编辑器里输入任意字 
+cat xj.php          %显示文件内容
+git add .           %将文件放进车间
+git commit -m 'master' %入库
+git branch ask       %创建分支ask
+git checkout -b bbs     %创建分支bbs，并切换到bbs
+vim xj.php              %在bbs分支下编辑xj文档
+输入bbs
+git add .               入车间
+git commit -m 'bbs'     入库
+git checkout ask        切换到ask分支
+vim xj.php              在ask分支下编辑文档
+输入ask
+git add .               入车间
+git commit -m 'ask'     入库
+git checkout master     切换到master分支
+git merge bbs           将分支bbs合并到master上
+cat xj.php  %显示为bbs分支下xj.php的内容，即bbs
+git merge ask  %合并ask到master，产生冲突，因为分支ask里的文件xj.php内容与分支bbs里的文件xj.php内容不同
+--处理方法
+    vim xj.php  %进入合并冲突文件里手动改内容
+    git add .
+    git commit -m 'success'
+
+
+

@@ -1,0 +1,2 @@
+git merge ask %将ask分支合并到master上
+git branch -d ask %经过合并分支后，ask分支就可以删除了，通过-d删除ask分支

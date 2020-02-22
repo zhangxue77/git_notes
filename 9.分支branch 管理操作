@@ -1,0 +1,17 @@
+mkdir cheshi %创建文件夹
+cd cheshi  %打开文件夹
+git init  %创建库
+git branch  %查看分支，当前没有分支
+touch xj.php  %在文件夹里新建文件
+git add . %放进车间
+git commit -m 'first'  %入库
+git branch %查看分支，当前是master 分支
+git branch ask %创建一个分支ask
+git branch  %当前有master 还有 ask分支
+git checkout ask %将当前所属分支切换到ask分支上
+touch b.php  %在ask分支下新建文件
+
+创建分支加切换到新分支，也可以直接使用命令
+git checkout -b bbs
+=git branch bbs
+ git checkout bbs

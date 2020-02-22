@@ -1,0 +1,10 @@
+--创建一个c.php
+    touch c.php
+--将c.php放进车间
+    git add .
+--将放进车间的c.php文件入库，注意-m后面的单引号内容是你取的名字
+    git commit -m 'add c.php'
+--将车间内的c.php文件改名为houdunren.php，通过mv命令
+    git mv c.php houdunren.php
+--将houdunren.php入库
+    git commit -m 'c.php rename houdunren.php'

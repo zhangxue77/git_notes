@@ -1,0 +1,6 @@
+touch a.php  %新建文件
+git add .  %将文件放车间
+git commit -m 'first'  %文件入库，并将此事件命名first
+git log %查看日志
+git commit --amend  %amend命令修改事件名
+修改名字first

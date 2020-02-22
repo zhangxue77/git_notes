@@ -1,0 +1,29 @@
+mkdir cheshi
+touch master.php
+git init
+git add .
+git commit -m 'master.php'
+git branch ask
+git branch bbs
+git checkout ask
+touch ask.php
+git add .
+%%%此时有事需要离开，可是ask.php还未提交怎么办？设置临时存储区，存下当前操作,命令stash，
+但前提是跟版本库关联的文件才可以，要么已到车间，要么已经入库
+git stash 
+git stash  list         %可查看临时存储区的文件
+git stash apply          %恢复临时区
+git stash drop stash@{o}  %删除临时存储区
+git stash pop
+=git stash apply          %恢复临时区内容后，删除临时区
+ git stash drop stash@{o} 
+
+
+练习
+touch xj.php   %新建两个文件
+touch hd.html
+git add .      %进车间
+git stash       全部进入临时存储区
+git stash list      查看
+git stash apply stash@{1}   恢复第1个存储区内容，即hd.html
+

@@ -1,0 +1,6 @@
+--配置默认文本编辑器为code
+    git config --global core.editor code
+--配置全局用户，如果以后未给仓库配用户，则默认全局用户
+    git config --global user.name "zhangxue77"
+    git config --global user.email "zx_beryl@163.com"
+

@@ -1,0 +1,27 @@
+mkdir houdun
+cd houdun
+git init
+touch master.php
+git add .
+git commit -m 'master commit'
+git checkout -b ask
+touch ask.php
+git add .
+git commit -m 'ask commit'  %子分支ask提交
+
+这个时候将ask合并到master 是不会产生记录的
+因为master主分支没有改变
+
+git checkout master
+touch a.php
+git add .
+git commit -m 'm2 commit'
+
+这个时候将ask合并到master主分支会产生记录，因为master主分支更新了，注意合并操作需要在主分支master进行
+
+这个时候可以通过rebase命令，将ask分支提交点更改为新的主分支提交点，即将子分支后移，直接接到新更新的主分支后面
+git rebase master   %需要在子分支里进行设置，意思是重置基础点，将ask重新移到最新主分支
+git checkout master
+git merge ask
+git log --oneline
+可以看到合并子分支记录最在上面

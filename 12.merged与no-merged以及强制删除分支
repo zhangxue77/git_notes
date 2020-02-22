@@ -1,0 +1,4 @@
+git branch --merged   %显示已经合并的分支
+git branch --no-merged   %显示未合并的分支
+git branch test   %创建一个test分支
+git branch -D test %强制删除未合并的test分支，-d无法删除未合并的分支

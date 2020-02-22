@@ -1,0 +1,14 @@
+--查看历史操作
+    git log
+--查看详细历史操作信息
+    git log -p
+--查看最近一次的详细信息
+    git log -p -1
+--查看简要信息
+    git log --oneline
+--具体信息
+    git log --oneline -p
+--查看有哪些文件发生变化显示文件名
+    git log --name-only
+--查看文件到底是什么变化，显示名字还有变化的状态
+    git log --name-status
