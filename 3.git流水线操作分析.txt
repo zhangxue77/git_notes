@@ -20,8 +20,8 @@
     再在gitignore文件里写上不想放进车间的文件，比如目前有文件：a.txt b.txt 文件夹：ventor
     *.txt  %表示后缀为txt的文件不被监视，可忽略，不用放进车间
     ！a.txt %除了a.txt文件外其余都监视，不可忽略
-    /ventor %文件夹被忽略，不用监视
-    /ventor/index.php %文件夹ventor下的index.php被忽略，不被监视
+    /文件夹名 %文件夹被忽略，不用监视
+    /文件夹名/index.php %文件夹ventor下的index.php被忽略，不被监视
 --查看状态index.php
     git status
 --删除本地文件

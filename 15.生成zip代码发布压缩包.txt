@@ -1,0 +1,6 @@
+mkdir cheshi
+touch master.php
+touch xj.php
+git add .
+git commit -m 'master.php'
+git archive master --prefix='hdcms' --forma=zip > hdcms.zip %压缩分支master，压缩文件名为hdcms，格式为zip

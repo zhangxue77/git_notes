@@ -8,7 +8,8 @@ git add a.php    %再次将a.php放进车间
 git commit -m '11'  %将文件入库
 vim a.php   %编辑a.php
 git add a.php  %将重新编辑的a.php放进车间
-git reset HAED a.php  %第二次放入后，后悔，使用reset撤回
-cat a.php  %可以显示a.php内容
-git checkout -- a.php  %恢复到上次入库的文件
+git reset --hard  清除这个改动，文件又恢复到未改动时
+对于版本库，git reset --hard HEAD^^^ 表示倒退3个版本，即清除近3次入库，恢复到3次前
+
+ 
 
